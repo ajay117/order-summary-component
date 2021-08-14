@@ -6,6 +6,7 @@
 html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -31,6 +32,11 @@ img {
 }
 
 /* ||Classes  */
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -80,6 +86,9 @@ img {
     font-weight: 700;
     color: hsl(223, 47%, 23%);
 }
+.horizontal-padding {
+    padding: 0 10px;
+}
 
 /* || States */
 .btn:active {
@@ -118,9 +127,6 @@ a:active {
 
 @media screen and (min-width: 1000px) {
     .container {
-        width: 30%;
+        width: 45%;
     }
-}
-.horizontal-padding {
-    padding: 0 10px;
 }
