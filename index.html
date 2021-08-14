@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="home">
+      <section class="container border-radius-btm border-radius-top">
+        <img
+          class="border-radius-top"
+          src="images/illustration-hero.svg"
+          alt="Brand Picture"
         />
-        <link rel="stylesheet" href="./styles.css" />
+        <section class="vertical-padding">
+          <article class="horizontal-padding">
+            <h1>Order Summary</h1>
+            <p class="medium-line-height">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </article>
 
-        <title>Frontend Mentor | Order summary card</title>
-
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-                margin-top: 20px;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="home">
-            <div class="container border-radius-btm border-radius-top">
+          <div class="plan flex-box">
+            <div class="flex-box">
+              <div>
                 <img
-                    class="border-radius-top"
-                    src="images/illustration-hero.svg"
+                  class="mr-10"
+                  class="music-icon"
+                  src="images/icon-music.svg"
+                  alt=""
                 />
-                <div>
-                    <div class="horizontal-padding">
-                        <h3>Order Summary</h3>
-                        <p class="max-line-height">
-                            You can now listen to millions of songs, audiobooks,
-                            and podcasts on any device anywhere you like!
-                        </p>
-                    </div>
-
-                    <div class="flex-box">
-                        <div class="flex-box">
-                            <div>
-                                <img
-                                    class="mr-10"
-                                    class="music-icon"
-                                    src="images/icon-music.svg"
-                                />
-                            </div>
-                            <div class="medium-line-height">
-                                <p class="bold-text">Annual Plan</p>
-                                <p>$59.99/year</p>
-                            </div>
-                        </div>
-                        <p><a href="#">Change</a></p>
-                    </div>
-                    <div class="flex-row">
-                        <p><button class="btn">Proceed to Payment</button></p>
-                        <p><button class="cancel-btn">Cancel Order</button></p>
-                    </div>
-                </div>
+              </div>
+              <div class="plan-type">
+                <p class="bold-text">Annual Plan</p>
+                <p>$59.99/year</p>
+              </div>
             </div>
-        </div>
+            <p><a href="#">Change</a></p>
+          </div>
+          <div>
+            <p><button class="btn mb-15">Proceed to Payment</button></p>
+            <p><button class="cancel-btn">Cancel Order</button></p>
+          </div>
+        </section>
+      </section>
+    </main>
 
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="https://github.com/ajay117">Ajay KC</a>.
-        </div>
-    </body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ajay117">Ajay KC</a>.
+      </div>
+    </footer>
+  </body>
 </html>
