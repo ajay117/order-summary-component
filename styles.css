@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* || Global  */
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 30px 0;
+    background-color: hsl(225, 100%, 94%);
+    text-align: center;
+    font-size: 16px;
+}
+p {
+    color: hsl(224, 23%, 55%);
+}
+h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+a {
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ||Classes  */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background-color: rgba(255, 249, 249, 0.972);
+}
+.border-radius-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.border-radius-btm {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn {
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+.cancel-btn {
+    color: hsl(224, 23%, 55%);
+}
+.btn,
+.cancel-btn {
+    border: none;
+    font-weight: 900;
+}
+
+/* ||Utilities  */
+.mr-10 {
+    margin-right: 10px;
+}
+.medium-line-height {
+    line-height: 7px;
+}
+.max-line-height {
+    line-height: 1.5;
+}
+.bold-text {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+/* || States */
+.btn:active {
+    background-color: hsl(224, 23%, 55%);
+    font-size: 13px;
+}
+.cancel-btn:active {
+    color: hsl(223, 47%, 23%);
+    font-size: 13px;
+}
+a:active {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 530px) {
+    body {
+        background-image: url('/images/pattern-background-desktop.svg');
+    }
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 590px) {
+    .container {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 760px) {
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 30%;
+    }
+}
+.horizontal-padding {
+    padding: 0 10px;
+}
