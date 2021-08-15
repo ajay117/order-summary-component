@@ -80,6 +80,7 @@ footer {
   border-radius: 15px;
   background-color: var(--bright-blue);
   color: white;
+  filter: drop-shadow(0px 10px 10px hsl(225, 100%, 94%));
 }
 .cancel-btn {
   color: var(--desaturated-blue);
